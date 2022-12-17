@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #00D411;
+  background-color: $primary_green;
   height: 100px;
 }
 
 .navigation-wrapper{
-  font-size: 16px;
-  color: white;
+  font-size: 1rem;
+  color: $primary_white;
   font-family: $primary_font;
 
   &__menu{
@@ -17,7 +17,16 @@
     list-style-type: none;
 
     &__item{
-      padding:20px
+      padding:2rem;
+
+      &__link{
+        text-decoration: none;
+        color: $primary_white;
+
+        &:hover{
+          border-bottom: 1px solid $primary_blue;
+        }
+      }
     }
   }
 }
