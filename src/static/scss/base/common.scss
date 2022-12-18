@@ -12,8 +12,14 @@
   font-family: $primary_font;
 
 
-  &--big {
+  &--xl-size {
     font-size: 4.2rem;
+    max-width: 51rem;
+    text-align: center;
+  }
+
+  &--l-size{
+    font-size: 3.6rem;
     max-width: 51rem;
     text-align: center;
   }
@@ -34,4 +40,9 @@
   max-width: 29.1rem;
   text-align: justify;
   font-family: $primary_font;
+
+  &--white-center{
+    color: white;
+    text-align: center;
+  }
 }

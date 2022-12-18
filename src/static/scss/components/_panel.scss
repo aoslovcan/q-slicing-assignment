@@ -1,0 +1,16 @@
+.c-panel{
+  width: auto;
+  height: 42rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  &__content{
+    align-items: center;
+    justify-content: center;
+    background: rgba(66, 66, 66, 0.5);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
