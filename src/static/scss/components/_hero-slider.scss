@@ -1,0 +1,19 @@
+.c-hero-slider{
+  height: 41.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/hero_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content{
+    align-items: center;
+    justify-content: center;
+    background: rgba(66, 66, 66, 0.5);
+
+    &__green-part{
+      color: #D7FFDA;
+    }
+  }
+}

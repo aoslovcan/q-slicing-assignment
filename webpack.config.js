@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: './src/static/js/index.js',
     mode: 'development',
@@ -13,9 +14,18 @@ module.exports = {
         filename: 'bundle.js',
     },
     watch: true,
-
+    plugins: [new MiniCssExtractPlugin()],
     module: {
         rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: [/node_modules/]
+            },
+            {
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader"],
+            },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
@@ -27,6 +37,7 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            { test: /\.txt$/, use: 'raw-loader' }
         ],
     },
 }

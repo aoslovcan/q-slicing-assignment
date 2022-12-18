@@ -1,0 +1,5 @@
+@include font("Poppins", "Poppins-Bold");
+@include font("Poppins", "Poppins-Light");
+
+$poppins: 'Poppins', sans-serif;
+$primary_font: $poppins;

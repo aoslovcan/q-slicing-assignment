@@ -1,0 +1,32 @@
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $primary_green;
+  height: 100px;
+}
+
+.navigation-wrapper{
+  font-size: 1rem;
+  color: $primary_white;
+  font-family: $primary_font;
+
+  &__menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    &__item{
+      padding:2rem;
+
+      &__link{
+        text-decoration: none;
+        color: $primary_white;
+
+        &:hover{
+          border-bottom: 1px solid $primary_blue;
+        }
+      }
+    }
+  }
+}
