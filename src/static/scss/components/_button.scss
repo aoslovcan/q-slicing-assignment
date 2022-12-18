@@ -19,4 +19,8 @@
       background-color: #4dff5b;
     }
   }
+
+  &--outline{
+    border: 2px solid $primary_green
+  }
 }

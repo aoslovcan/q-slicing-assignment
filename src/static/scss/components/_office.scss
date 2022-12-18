@@ -1,0 +1,34 @@
+.c-office{
+  height: 38.18rem;
+  font-family: $primary_font;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+  &__images{
+    display: flex;
+    align-items: center;
+
+    &__back{
+      height: 23.94rem;
+      width: 20.84rem;
+      background-image: url('../images/pic_secondary.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 13.08rem;
+    }
+
+    &__front{
+      height: 21.54rem;
+      width: 14.47rem;
+      background-image: url('../images/pic_primary.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 24.89rem;
+      top: 15.48rem;
+    }
+  }
+
+}
