@@ -1,0 +1,42 @@
+.card {
+  width: 29.04rem;
+  height: 20.76rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    width: 22.38rem;
+  }
+}
+
+.posts{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.c-real-stories {
+  height: 55.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  background: linear-gradient(#FFFFFF, #D7FFDA);
+}
+
+.user-info {
+  align-items: center;
+
+  &__image, &__image img {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 50%;
+  }
+
+  &__about {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

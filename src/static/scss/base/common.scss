@@ -24,8 +24,16 @@
     text-align: center;
   }
 
+  &--m-size{
+    font-size: 1.32rem;
+  }
+
   &--white {
     color: $primary_white;
+  }
+
+  &--green{
+    color: $primary_green;
   }
 
   &--medium--green {
