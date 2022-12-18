@@ -5,9 +5,18 @@
   padding: 0.9rem 3.7rem;;
   width: auto;
   outline: none;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #d9d9d9;
+  }
 
   &--green{
     background-color: $primary_green;
     color: $primary_white;
+
+    &:hover{
+      background-color: #4dff5b;
+    }
   }
 }
