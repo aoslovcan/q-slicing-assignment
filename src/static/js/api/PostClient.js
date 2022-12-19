@@ -3,7 +3,7 @@ import {ApiClient} from "./ApiClient";
 export class PostClient extends ApiClient{
 
     BASE_URl = "https://dummyjson.com";
-    getPosts() {
+    fetchPosts() {
         const url = `${this.BASE_URl}/posts/?limit=3`;
         const data = {
             method: 'GET',
@@ -15,5 +15,4 @@ export class PostClient extends ApiClient{
 
         return this.fetchApi(url, data);
     }
-
 }
