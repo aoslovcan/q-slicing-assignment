@@ -1,29 +1,51 @@
+.c-real-stories {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: linear-gradient(#FFFFFF, #D7FFDA);
+  padding: 20px;
+
+  &__title {
+    position: relative;
+    z-index: 9;
+  }
+
+
+}
+
 .card {
   width: 29.04rem;
   height: 20.76rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  align-items: center;
+  margin: 2rem;
+  box-shadow: 0.6rem 0.3rem 0.72rem rgb(0 0 0 / 10%);;
 
   &__content {
     width: 22.38rem;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 30px;
+    height: 23px;
+    background-size: cover;
+    left: -2rem;
   }
 }
 
-.posts{
+.posts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-.c-real-stories {
-  height: 55.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  background: linear-gradient(#FFFFFF, #D7FFDA);
-}
 
 .user-info {
   align-items: center;
@@ -38,5 +60,33 @@
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+
+    &__profession {
+      color: #A9A9A9;
+      font-size: 0.84rem;
+    }
   }
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 10.02rem;
+  height: 126.77px;
+  position: absolute;
+  left: -1rem;
+  top: 2rem;
+
+  &__small {
+    width: 1.2rem;
+    height: 0.96rem;
+  }
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  align-items: center;
+  margin-top: 98px;
 }

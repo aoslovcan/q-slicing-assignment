@@ -10,6 +10,11 @@
 
 .title {
   font-family: $primary_font;
+  z-index: 9999;
+
+  &--bold{
+    font-weight: bold;
+  }
 
 
   &--xl-size {
@@ -22,6 +27,13 @@
     font-size: 3.6rem;
     max-width: 51rem;
     text-align: center;
+  }
+
+  &--medium{
+    font-size: 2.88rem;
+    margin-left: 3.18rem;
+    margin-top: 0;
+    margin-bottom: -1rem;
   }
 
   &--m-size{
