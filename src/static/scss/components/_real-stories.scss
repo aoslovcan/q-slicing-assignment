@@ -1,51 +1,36 @@
 .c-real-stories {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
   background: linear-gradient(#FFFFFF, #D7FFDA);
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
 
   &__title {
     position: relative;
     z-index: 9;
+    height: fit-content;
   }
 
-
+  &__first{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15.9rem;
+  }
 }
 
 .card {
   width: 29.04rem;
   height: 20.76rem;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
+  border-radius: 0.6rem;
+  background-color: $primary_white;
   align-items: center;
   margin: 2rem;
-  box-shadow: 0.6rem 0.3rem 0.72rem rgb(0 0 0 / 10%);;
+  box-shadow: 0.6rem 0.3rem 0.72rem rgb(0 0 0 / 10%);
+  padding: 0.6rem;
 
   &__content {
     width: 22.38rem;
     position: relative;
   }
-
-  &__icon {
-    position: absolute;
-    width: 30px;
-    height: 23px;
-    background-size: cover;
-    left: -2rem;
-  }
 }
-
-.posts {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .user-info {
   align-items: center;
@@ -57,9 +42,7 @@
   }
 
   &__about {
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
+    margin-left: 0.6rem;
 
     &__profession {
       color: #A9A9A9;
@@ -68,25 +51,8 @@
   }
 }
 
-.icon {
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 10.02rem;
-  height: 126.77px;
-  position: absolute;
-  left: -1rem;
-  top: 2rem;
-
-  &__small {
-    width: 1.2rem;
-    height: 0.96rem;
-  }
-}
-
 .front {
-  display: flex;
-  flex-direction: column;
-  width: 414px;
-  align-items: center;
-  margin-top: 98px;
+  width: 28.84rem;
+  margin-top: 5.88rem;
+  align-items: baseline;
 }
