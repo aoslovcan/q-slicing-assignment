@@ -1,0 +1,39 @@
+@include keyframesDotPulse();
+
+.loading {
+  position: relative;
+  left: -599.94rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  background-color: $primary_green;
+  color: $primary_green;
+  box-shadow: 599.94rem 0 0 -0.3rem;
+  animation: dot-pulse 1.5s infinite linear;
+  animation-delay: 0.25s;
+
+  &::before, &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%
+  }
+
+  &::before {
+    box-shadow: 60rem 0 0 -0.3rem;
+    animation: dot-pulse-before 1.5s infinite linear;
+    animation-delay: 0s;
+    margin-left: -0.84rem;
+  }
+
+  &::after {
+    box-shadow: 600.84rem 0 0 -0.3rem;
+    animation: dot-pulse-after 1.5s infinite linear;
+    animation-delay: 0.5s;
+    margin-left: 0.84rem
+  }
+}
+
