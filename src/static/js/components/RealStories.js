@@ -1,19 +1,28 @@
 import {PostClient} from "../api/PostClient";
 import {UserClient} from "../api/UserClient";
 import PostCardComponent from "./PostCardComponent";
+import Loader from "./Loader";
 
 export default class RealStories {
 
     postClient = new PostClient();
     userClient = new UserClient();
+    loader = new Loader();
     postCardComponent = new PostCardComponent();
     postsData = [];
     userInfo = [];
 
     init() {
+        this.getPostsData();
+    }
+
+    getPostsData() {
+        this.loader.startLoading('.c-real-stories');
         this.postClient.fetchPosts().then((res) => {
+            document.querySelector('.loading').style.display = "none";
             this.saveData(res.posts, 'post');
             this.getUsersInfoByIds();
+            this.loader.stopLoading();
         });
     }
 
