@@ -37,6 +37,10 @@
     font-size: 1.32rem;
   }
 
+  &--s-size{
+    font-size: 1.2rem;
+  }
+
   &--white {
     color: $primary_white;
   }
@@ -67,3 +71,4 @@
 .hidden{
   display: none;
 }
+

@@ -3,7 +3,10 @@
   align-items: center;
   justify-content: space-around;
   background-color: $primary_green;
-  height: 100px;
+  height: 6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
 
 .navigation-wrapper{
@@ -18,6 +21,14 @@
 
     &__item{
       padding:2rem;
+
+      &--small{
+        padding: 0.3rem;
+      }
+
+      &--border{
+
+      }
 
       &__link{
         text-decoration: none;
