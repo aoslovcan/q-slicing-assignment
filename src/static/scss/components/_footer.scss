@@ -1,0 +1,26 @@
+.c-footer{
+  background-color: $primary_black;
+  color: $primary_white;
+  font-family: $primary_font;
+  padding: 4.6rem;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  line-height: 1.44rem;
+
+
+  &__paragraph{
+    font-family: $primary_font;
+    text-align: left;
+    font-size: 0.84rem;
+    width: 14.46rem;
+  }
+}
+
+.baseline-space{
+  align-items: baseline;
+  justify-content: space-between;;
+}
+
+.marginBottom{
+  margin-bottom: 6.48rem;
+}
