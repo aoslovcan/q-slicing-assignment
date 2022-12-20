@@ -17,3 +17,13 @@
     }
   }
 }
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: $primary_green;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+  opacity: 1;
+}

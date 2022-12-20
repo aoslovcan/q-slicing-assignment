@@ -10,7 +10,11 @@
 
 .title {
   font-family: $primary_font;
+  z-index: 9999;
 
+  &--bold{
+    font-weight: bold;
+  }
 
   &--xl-size {
     font-size: 4.2rem;
@@ -24,8 +28,21 @@
     text-align: center;
   }
 
+  &--medium{
+    font-size: 2.88rem;
+    margin-bottom: 2px;
+  }
+
+  &--m-size{
+    font-size: 1.32rem;
+  }
+
   &--white {
     color: $primary_white;
+  }
+
+  &--green{
+    color: $primary_green;
   }
 
   &--medium--green {
@@ -45,4 +62,8 @@
     color: white;
     text-align: center;
   }
+}
+
+.hidden{
+  display: none;
 }

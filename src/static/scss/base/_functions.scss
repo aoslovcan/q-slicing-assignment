@@ -1,9 +1,34 @@
 @mixin font($font-family, $font-filename) {
   @font-face {
     font-family: $font-family;
-    src:  url("../fonts/#{$font-filename}.woff2") format('woff2'),
+    src: url("../fonts/#{$font-filename}.woff2") format('woff2'),
     url("../fonts/#{$font-filename}.woff") format('woff');
     font-weight: normal;
     font-style: normal;
   }
+}
+
+@mixin keyframesBoxShadow($name, $settings) {
+  @keyframes #{$name} {
+
+    0% {
+      @include boxShadowContent(nth($settings,1));
+    }
+    30% {
+      @include boxShadowContent(nth($settings,2));
+    }
+    60%, 100% {
+      @include boxShadowContent(nth($settings,3));
+    }
+  }
+}
+
+@mixin boxShadowContent($arguments){
+  box-shadow: $arguments;
+}
+
+@mixin keyframesDotPulse(){
+  @include keyframesBoxShadow(dot-pulse-before, $dotPulseBefore);
+  @include keyframesBoxShadow(dot-pulse, $dotPulse);
+  @include keyframesBoxShadow(dot-pulse-after, $dotPulseAfter);
 }

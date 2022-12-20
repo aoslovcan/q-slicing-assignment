@@ -1,0 +1,19 @@
+.c-icon {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+
+  &--big{
+    width: 10.02rem;
+    height: 7.6rem;
+    left: -4rem;
+    top: 5rem;
+  }
+
+  &--small {
+    width: 1.8rem;
+    height: 1.38rem;
+    left: -2rem;
+  }
+}
