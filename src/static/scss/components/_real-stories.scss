@@ -2,6 +2,7 @@
   background: linear-gradient(#FFFFFF, #D7FFDA);
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 
   &__title {
     position: relative;
@@ -55,4 +56,11 @@
   width: 28.84rem;
   margin-top: 5.88rem;
   align-items: baseline;
+}
+
+
+@media screen and (max-width: 1075px) {
+  .c-real-stories__first{
+    margin-bottom: 0;
+  }
 }

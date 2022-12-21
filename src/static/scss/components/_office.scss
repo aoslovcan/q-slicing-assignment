@@ -1,13 +1,17 @@
 .c-office{
-  height: 38.18rem;
   font-family: $primary_font;
   justify-content: space-around;
   align-items: center;
   position: relative;
 
+  &__content{
+    padding: 0.6rem;
+  }
+
   &__images{
-    display: flex;
-    align-items: center;
+    width: 30rem;
+    height: 36rem;
+    position: relative;
 
     &__back{
       height: 23.94rem;
@@ -16,7 +20,8 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
-      left: 13.08rem;
+      left: 3.08rem;
+      bottom: 9.24rem;
     }
 
     &__front{
@@ -26,9 +31,67 @@
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
-      left: 24.89rem;
-      top: 15.48rem;
+      left: 14.89rem;
+      top: 10.48rem;
     }
   }
 
+  .c-button{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .c-office__images{
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .c-office__images{
+    width: 60rem;
+  }
+
+  .c-office{
+    .c-button{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .c-office__images{
+    width: 80rem;
+  }
+
+  .c-office{
+    .c-button{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .c-office{
+    flex-direction: column;
+  }
+
+  .c-office__images{
+    width: 100%;
+  }
+
+  .c-office{
+    .c-button{
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .c-office__images__back{
+    width: 17.84rem;
+  }
+  .c-office__images__front{
+    width: 11.47rem;
+  }
 }
