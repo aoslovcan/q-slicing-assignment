@@ -11,18 +11,22 @@ export default class RealStories {
     postCardComponent = new PostCardComponent();
     postsData = [];
     userInfo = [];
+    mobileView = 1060;
 
     init() {
         this.getPostsData();
+
     }
 
     getPostsData() {
         this.loader.startLoading('.c-real-stories');
         this.postClient.fetchPosts().then((res) => {
             document.querySelector('.loading').style.display = "none";
+            this.mobileViewController();
             this.saveData(res.posts, 'post');
             this.getUsersInfoByIds();
             this.loader.stopLoading();
+
         });
     }
 
@@ -67,7 +71,19 @@ export default class RealStories {
         `
     }
 
-    render() {
+    mobileViewController(){
+        window.addEventListener("load", () => {
+            this.render(window.innerWidth);
+        });
+        window.addEventListener("resize", (event) => {
+            this.render(window.innerWidth)
+        });
+    }
+
+
+
+    render(width) {
+        console.log(width);
         let posts = this.postsData[0];
         let users = this.userInfo[0];
         let firstPost = posts[0];
@@ -76,15 +92,33 @@ export default class RealStories {
         let realStoriesFirst = document.querySelector(".c-real-stories__first");
         let realStoriesSecond = document.querySelector(".c-real-stories__second");
 
-        realStoriesFirst.innerHTML += ` 
+        realStoriesSecond.innerHTML = ``;
+        realStoriesFirst.innerHTML = ``;
+
+        if(width <= this.mobileView){
+
+            realStoriesFirst.innerHTML += ` 
+            ${this.realStoriesTitle()}
+          `
+
+            this.postsData[0].map((post) => {
+                    let user = users.filter(({id}) => id === post.userId);
+                    realStoriesSecond.innerHTML += this.postCardComponent.createCard(post, user[0])
+                }
+            )
+
+            return;
+        }
+
+            realStoriesFirst.innerHTML += ` 
             ${this.realStoriesTitle()}
             ${this.postCardComponent.createCard(firstPost, firstUser[0])}
           `
 
-        restPosts.map((post) => {
-                let user = users.filter(({id}) => id === post.userId);
-                realStoriesSecond.innerHTML += this.postCardComponent.createCard(post, user[0])
-            }
-        )
+            restPosts.map((post) => {
+                    let user = users.filter(({id}) => id === post.userId);
+                    realStoriesSecond.innerHTML += this.postCardComponent.createCard(post, user[0])
+                }
+            )
     };
 }

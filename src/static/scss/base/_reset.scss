@@ -8,10 +8,27 @@ html, body, #root {
   height: 100%;
   padding: 0;
   margin:0;
+  overflow-x: hidden;
 }
 
 ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  height: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #484848;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
