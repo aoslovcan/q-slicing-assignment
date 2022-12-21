@@ -4,12 +4,10 @@ export default class MobileNavigationController {
 
     init() {
         window.addEventListener("load", () => {
-            console.log(window.innerWidth);
             this.changeNavigationView(window.innerWidth);
             this.openNavigationMenu();
         });
         window.addEventListener("resize", (event) => {
-            console.log(event.target.innerWidth);
             this.changeNavigationView(window.innerWidth)
         });
     }

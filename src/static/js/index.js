@@ -2,6 +2,7 @@ import "../scss/styles.scss";
 import HeroSlider from "./components/HeroSlider";
 import RealStories from "./components/RealStories";
 import MobileNavigationController from "./components/MobileNavigationController";
+import FooterMobileView from "./components/FooterMobileView";
 
 const ready = (callbackFunc) => {
     if (document.readyState !== "loading") {
@@ -31,8 +32,10 @@ ready(() => {
     const heroSlider = new HeroSlider();
     const realStories = new RealStories();
     const mobileNavigation = new MobileNavigationController();
+    const footerMobileView = new FooterMobileView();
 
     heroSlider.init();
     realStories.init();
     mobileNavigation.init();
+    footerMobileView.init();
 })
