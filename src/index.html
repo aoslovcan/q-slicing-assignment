@@ -10,26 +10,10 @@
     <div class="logo">
         <img src="./static/images/logo.png" alt="logo"/>
     </div>
-    <nav class="navigation-wrapper">
-        <ul class="navigation-wrapper__menu">
-            <li class="navigation-wrapper__menu__item">
-                <a class="navigation-wrapper__menu__item__link" href="#">About</a>
-            </li>
-            <li class="navigation-wrapper__menu__item">
-                <a class="navigation-wrapper__menu__item__link" href=" #">Offices</a>
-            </li>
-            <li class="navigation-wrapper__menu__item">
-                <a class="navigation-wrapper__menu__item__link" href=" #">Packages</a>
-            </li>
-            <li class="navigation-wrapper__menu__item">
-                <a class="navigation-wrapper__menu__item__link" href="#">Benefits</a>
-            </li>
-            <li class="navigation-wrapper__menu__item">
-                <a class="navigation-wrapper__menu__item__link" href="#">Prices</a>
-            </li>
-        </ul>
+    <nav id="main-navigation" class="navigation-wrapper"></nav>
+    <nav class="mobile-navigation-wrapper hidden">
     </nav>
-    <button class="c-button">Login</button>
+    <button id="login-button" class="c-button">Login</button>
 </header>
 <section class="swiper c-hero-slider">
     <div class="swiper-wrapper">
@@ -51,16 +35,15 @@
             </h1>
             <button class="c-button c-button--green">See the benefits</button>
         </div>
-
     </div>
     <div class="swiper-pagination"></div>
 </section>
 <section class="c-office row">
-    <div class="c-office__images">
+    <div class="c-office__images column">
         <div class="c-office__images__back"></div>
         <div class="c-office__images__front"></div>
     </div>
-    <div class="c-office__content">
+    <div class="c-office__content column">
         <h2 class="title title--medium--green">Check your new office</h2>
         <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget lectus urna. Nulla
             magna tortor, bibendum in molestie sed, gravida nec felis. Sed id egestasegestas risus, ut imperdiet
@@ -101,8 +84,8 @@
 
         <div class="c-footer__col2 column">
             <h3 class="title title--s-size title--white">Quick Links</h3>
-            <ul>
-                <li><a href="#" class="navigation-wrapper__menu__item__link">Offices</a> </li>
+            <ul class="footer-list">
+                <li><a href="#" class="navigation-wrapper__menu__item__link">Offices</a></li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Timetable</a></li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Clubs</a</li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Perks</a></li>
@@ -112,8 +95,8 @@
 
         <div class="c-footer__col2 column">
             <h3 class="title title--s-size title--white">Guides</h3>
-            <ul>
-                <li><a href="#" class="navigation-wrapper__menu__item__link">About</a> </li>
+            <ul class="footer-list">
+                <li><a href="#" class="navigation-wrapper__menu__item__link">About</a></li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Jobs</a></li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Applicants</a</li>
                 <li><a href="#" class="navigation-wrapper__menu__item__link">Statements</a></li>
@@ -123,7 +106,7 @@
 
         <div class="c-footer__col2 column">
             <h3 class="title title--s-size title--white">Reach us</h3>
-            <ul>
+            <ul class="footer-list">
                 <li><img src="./static/icons/message.svg" alt=""/> admin@worklyfe.com</li>
                 <li><img src="./static/icons/calling.svg" alt=""/> +88 98765 43210</li>
                 <li><img src="./static/icons/location.svg" alt=""/> 90210 Beverly Hills
@@ -135,7 +118,7 @@
     </div>
     <div class="baseline-space row">
         <div class="reserved-rights">© 2022 WorkLyfe. All rights reserved</div>
-        <ul class="row">
+        <ul class="row sub-footer">
             <li class="navigation-wrapper__menu__item--small">
                 <a href="#" class="navigation-wrapper__menu__item__link">
                     Terms & Conditions
@@ -165,10 +148,7 @@
                 </a>
             </li>
         </ul>
-
     </div>
-
 </footer>
-
 </body>
 </html>

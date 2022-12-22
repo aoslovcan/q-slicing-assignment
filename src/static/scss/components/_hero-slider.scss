@@ -1,4 +1,4 @@
-.c-hero-slider{
+.c-hero-slider {
   height: 41.88rem;
   display: flex;
   align-items: center;
@@ -7,12 +7,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__content{
+  &__content {
     align-items: center;
     justify-content: center;
     background: rgba(66, 66, 66, 0.5);
 
-    &__green-part{
+    &__green-part {
       color: #D7FFDA;
     }
   }

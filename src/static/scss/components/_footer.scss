@@ -1,4 +1,4 @@
-.c-footer{
+.c-footer {
   background-color: $primary_black;
   color: $primary_white;
   font-family: $primary_font;
@@ -6,9 +6,10 @@
   justify-content: space-between;
   font-size: 0.84rem;
   line-height: 1.44rem;
+  flex-wrap: wrap;
 
 
-  &__paragraph{
+  &__paragraph {
     font-family: $primary_font;
     text-align: left;
     font-size: 0.84rem;
@@ -16,11 +17,76 @@
   }
 }
 
-.baseline-space{
+.baseline-space {
   align-items: baseline;
-  justify-content: space-between;;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.marginBottom{
+.reserved-rights {
+  justify-content: center;
+}
+
+.marginBottom {
   margin-bottom: 6.48rem;
+}
+
+.sub-footer {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .c-footer__col1 {
+    margin-bottom: 0;
+  }
+  .baseline-space {
+    flex-direction: column;
+  }
+  .baseline-space:nth-child(2) {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+  .c-footer__col1 {
+    margin-bottom: 0;
+  }
+  .baseline-space {
+    flex-direction: column;
+  }
+  .baseline-space:nth-child(2) {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+}
+
+.arrow {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 8px;
+
+  &::before {
+    content: "❯";
+    color: white;
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
+
+.arrow-down::before {
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
 }
