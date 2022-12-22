@@ -1,8 +1,8 @@
 @mixin font($font-family, $font-filename) {
   @font-face {
     font-family: $font-family;
-    src: url("../fonts/#{$font-filename}.woff2") format('woff2'),
-    url("../fonts/#{$font-filename}.woff") format('woff');
+    src: url("../fonts/#{$font-filename}.woff2") format("woff2"),
+      url("../fonts/#{$font-filename}.woff") format("woff");
     font-weight: normal;
     font-style: normal;
   }
@@ -10,14 +10,14 @@
 
 @mixin keyframesBoxShadow($name, $settings) {
   @keyframes #{$name} {
-
     0% {
       @include boxShadowContent(nth($settings, 1));
     }
     30% {
       @include boxShadowContent(nth($settings, 2));
     }
-    60%, 100% {
+    60%,
+    100% {
       @include boxShadowContent(nth($settings, 3));
     }
   }

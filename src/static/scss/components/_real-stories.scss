@@ -1,5 +1,5 @@
 .c-real-stories {
-  background: linear-gradient(#FFFFFF, #D7FFDA);
+  background: linear-gradient(#ffffff, #d7ffda);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -36,7 +36,8 @@
 .user-info {
   align-items: center;
 
-  &__image, &__image img {
+  &__image,
+  &__image img {
     width: 3.6rem;
     height: 3.6rem;
     border-radius: 50%;
@@ -46,7 +47,7 @@
     margin-left: 0.6rem;
 
     &__profession {
-      color: #A9A9A9;
+      color: #a9a9a9;
       font-size: 0.84rem;
     }
   }
@@ -60,7 +61,6 @@
 
 @media screen and (max-device-width: 1000px) and (min-device-width: 200px) {
   .c-real-stories {
-
     &__first {
       margin-bottom: 0;
     }
@@ -71,7 +71,6 @@
       max-width: 50rem;
       overflow: auto;
     }
-
   }
 
   .front {
@@ -86,7 +85,6 @@
 
 @media screen and (max-width: 1050px) {
   .c-real-stories {
-
     &__first {
       margin-bottom: 0;
     }
