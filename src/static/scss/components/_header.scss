@@ -16,19 +16,12 @@
   font-family: $primary_font;
 
   &__menu{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
 
     &__item{
       padding: 2rem;
 
       &--small{
         padding: 0.3rem;
-      }
-
-      &--border{
-
       }
 
       &__link{

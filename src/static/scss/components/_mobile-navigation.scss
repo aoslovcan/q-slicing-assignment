@@ -1,0 +1,19 @@
+.mobile-navigation-wrapper{
+  width: 98%;
+  height: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  margin-top: 6rem;
+  background-color: $primary_green;
+  font-family: $primary_font;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  .navigation-wrapper__menu__item{
+    padding: 2rem;
+  }
+
+}
