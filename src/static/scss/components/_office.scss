@@ -1,19 +1,19 @@
-.c-office{
+.c-office {
   font-family: $primary_font;
   justify-content: space-around;
   align-items: center;
   position: relative;
 
-  &__content{
+  &__content {
     padding: 0.6rem;
   }
 
-  &__images{
+  &__images {
     width: 30rem;
     height: 36rem;
     position: relative;
 
-    &__back{
+    &__back {
       height: 23.94rem;
       width: 20.84rem;
       background-image: url('../images/pic_secondary.png');
@@ -24,7 +24,7 @@
       bottom: 9.24rem;
     }
 
-    &__front{
+    &__front {
       height: 21.54rem;
       width: 14.47rem;
       background-image: url('../images/pic_primary.png');
@@ -36,68 +36,68 @@
     }
   }
 
-  .c-button{
+  .c-button {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 980px) {
-  .c-office__images{
+  .c-office__images {
     width: 40rem;
   }
 }
 
 @media screen and (max-width: 868px) {
-  .c-office__images{
+  .c-office__images {
     width: 60rem;
   }
 
-  .c-office{
-    .c-button{
+  .c-office {
+    .c-button {
       width: 100%;
     }
   }
 }
 
 @media screen and (max-width: 739px) {
-  .c-office__images{
+  .c-office__images {
     width: 80rem;
   }
 
-  .c-office{
-    .c-button{
+  .c-office {
+    .c-button {
       width: 100%;
     }
   }
 }
 
 @media screen and (max-width: 738px) {
-  .c-office{
+  .c-office {
     flex-direction: column;
   }
 
-  .c-office__images{
+  .c-office__images {
     width: 100%;
   }
 
-  .c-office{
-    .c-button{
+  .c-office {
+    .c-button {
       width: 100%;
     }
   }
 }
 
 @media screen and (max-width: 490px) {
-  .c-office__images__back{
+  .c-office__images__back {
     width: 17.84rem;
   }
-  .c-office__images__front{
+  .c-office__images__front {
     width: 11.47rem;
   }
 }
 
-@media only screen and  (min-device-width: 200px) and (max-device-width: 480px) {
-  .c-office{
+@media only screen and (min-device-width: 200px) and (max-device-width: 480px) {
+  .c-office {
     flex-direction: column;
   }
 }

@@ -1,4 +1,4 @@
-.c-button{
+.c-button {
   color: $primary_green;
   border-radius: 20rem;
   border: none;
@@ -7,20 +7,20 @@
   outline: none;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background-color: #d9d9d9;
   }
 
-  &--green{
+  &--green {
     background-color: $primary_green;
     color: $primary_white;
 
-    &:hover{
+    &:hover {
       background-color: #4dff5b;
     }
   }
 
-  &--outline{
+  &--outline {
     border: 2px solid $primary_green
   }
 }

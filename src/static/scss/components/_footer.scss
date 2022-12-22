@@ -70,7 +70,7 @@
   user-select: none;
   margin-left: 8px;
 
-  &::before{
+  &::before {
     content: "❯";
     color: white;
     display: inline-block;
@@ -83,10 +83,10 @@
   transform: rotate(90deg);
 }
 
-.nested{
+.nested {
   display: none;
 }
 
-.active{
+.active {
   display: block;
 }

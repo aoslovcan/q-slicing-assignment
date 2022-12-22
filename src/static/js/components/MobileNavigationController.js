@@ -42,12 +42,11 @@ export default class MobileNavigationController {
 
     openNavigationMenu(){
         const hamburgerIcon = document.querySelector(".hamburger-menu");
+        const mobileNavigation = document.querySelector(".mobile-navigation-wrapper");
         hamburgerIcon?.addEventListener('click', () => {
-            if (!hamburgerIcon.classList.contains('is-active')) {
-                hamburgerIcon.classList.add('is-active');
-            } else {
-                hamburgerIcon.classList.remove('is-active');
-            }
+            hamburgerIcon.classList.toggle('is-active');
+            mobileNavigation.classList.toggle('hidden');
+            mobileNavigation.classList.toggle('active');
         })
     }
 

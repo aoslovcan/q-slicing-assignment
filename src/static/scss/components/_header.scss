@@ -1,4 +1,4 @@
-.header-container{
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,25 +10,25 @@
   z-index: 99999;
 }
 
-.navigation-wrapper{
+.navigation-wrapper {
   font-size: 1rem;
   color: $primary_white;
   font-family: $primary_font;
 
-  &__menu{
+  &__menu {
 
-    &__item{
+    &__item {
       padding: 2rem;
 
-      &--small{
+      &--small {
         padding: 0.3rem;
       }
 
-      &__link{
+      &__link {
         text-decoration: none;
         color: $primary_white;
 
-        &:hover{
+        &:hover {
           border-bottom: 1px solid $primary_blue;
         }
       }

@@ -27,14 +27,14 @@
   }
 }
 
-.is-active{
+.is-active {
   transform: rotate(45deg);
 
-  &::after, &::before{
+  &::after, &::before {
     top: 0;
   }
 
-  &::after{
+  &::after {
     transform: rotate(90deg);
   }
 }

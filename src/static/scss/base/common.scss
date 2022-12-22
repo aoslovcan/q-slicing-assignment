@@ -12,7 +12,7 @@
   font-family: $primary_font;
   z-index: 9999;
 
-  &--bold{
+  &--bold {
     font-weight: bold;
   }
 
@@ -22,22 +22,22 @@
     text-align: center;
   }
 
-  &--l-size{
+  &--l-size {
     font-size: 3.6rem;
     max-width: 51rem;
     text-align: center;
   }
 
-  &--medium{
+  &--medium {
     font-size: 2.88rem;
     margin-bottom: 2px;
   }
 
-  &--m-size{
+  &--m-size {
     font-size: 1.32rem;
   }
 
-  &--s-size{
+  &--s-size {
     font-size: 1.2rem;
   }
 
@@ -45,7 +45,7 @@
     color: $primary_white;
   }
 
-  &--green{
+  &--green {
     color: $primary_green;
   }
 
@@ -62,13 +62,13 @@
   text-align: justify;
   font-family: $primary_font;
 
-  &--white-center{
+  &--white-center {
     color: white;
     text-align: center;
   }
 }
 
-.hidden{
+.hidden {
   display: none !important;
 }
 

@@ -2,7 +2,7 @@ import TreeComponentController from "./TreeComponentController";
 
 export default class FooterMobileView {
 
-    mobileScreen = 600;
+    mobileScreen = 991;
 
     init() {
         window.addEventListener("load", () => {
