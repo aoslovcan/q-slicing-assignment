@@ -2,7 +2,7 @@
   color: $primary_green;
   border-radius: 20rem;
   border: none;
-  padding: 0.9rem 3.7rem;;
+  padding: 0.9rem 3.7rem;
   width: auto;
   outline: none;
   cursor: pointer;
@@ -21,6 +21,6 @@
   }
 
   &--outline {
-    border: 2px solid $primary_green
+    border: 2px solid $primary_green;
   }
 }

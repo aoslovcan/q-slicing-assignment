@@ -16,7 +16,7 @@
     &__back {
       height: 23.94rem;
       width: 20.84rem;
-      background-image: url('../images/pic_secondary.png');
+      background-image: url("../images/pic_secondary.png");
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;
@@ -27,7 +27,7 @@
     &__front {
       height: 21.54rem;
       width: 14.47rem;
-      background-image: url('../images/pic_primary.png');
+      background-image: url("../images/pic_primary.png");
       background-repeat: no-repeat;
       background-size: cover;
       position: absolute;

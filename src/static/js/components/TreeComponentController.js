@@ -1,15 +1,16 @@
 export default class TreeComponentController {
+  init() {
+    let arrowElems = document.querySelectorAll(".arrow");
 
-    init() {
-        let arrowElem = document.querySelectorAll(".arrow");
-
-        if (arrowElem) {
-            for (let i = 0; i < toggler.length; i++) {
-                arrowElem[i].addEventListener("click", () => {
-                    arrowElem[i].classList.toggle("arrow-down");
-                    arrowElem[i].parentElement.parentElement.querySelector('.nested').classList.toggle("active")
-                })
-            }
-        }
+    if (arrowElems) {
+      for (let i = 0; i < arrowElems.length; i++) {
+        arrowElems[i].addEventListener("click", () => {
+          arrowElems[i].classList.toggle("arrow-down");
+          arrowElems[i].parentElement.parentElement
+            .querySelector(".nested")
+            .classList.toggle("active");
+        });
+      }
     }
+  }
 }

@@ -1,15 +1,14 @@
-import {getExcerpt} from "../helpers/commonFunc";
+import { getExcerpt } from "../helpers/commonFunc";
 
 export default class PostCardComponent {
+  getBodyExcerpt(text) {
+    return `${getExcerpt(text, 159)}...`;
+  }
 
-    getBodyExcerpt(text) {
-        return `${getExcerpt(text, 159)}...`;
-    }
-
-    createCard(post, userData) {
-        const {title, body} = post;
-        const {firstName, lastName, company, image} = userData;
-        return `
+  createCard(post, userData) {
+    const { title, body } = post;
+    const { firstName, lastName, company, image } = userData;
+    return `
             <div class="card column">
                 <h3 class="title title--m-size title--green">${title}</h3>
                 <p class="paragraph card__content">
@@ -22,9 +21,11 @@ export default class PostCardComponent {
                     </div>
                      <div class="user-info__about column">
                         <span class="title title--bold">${firstName} ${lastName}</span>
-                        <span class="paragraph user-info__about__profession">${company.title}</span>
+                        <span class="paragraph user-info__about__profession">${
+                          company.title
+                        }</span>
                     </div>
                 </div>
-            </div>`
-    }
+            </div>`;
+  }
 }
